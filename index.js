@@ -16,7 +16,7 @@ app.get('/', async (req, res) => {
     team.push(species);
   }
 
-  res.render('index.ejs', { team });
+  res.render('index.ejs', { team: team });
 });
 
 app.listen(port, () => {
